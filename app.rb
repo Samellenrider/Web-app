@@ -17,5 +17,6 @@ get '/surf' do
 end
 
 get '/cat' do
-  '<img src ="http://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg" style="border: medium dashed blue">'
+  @name = %w[Sam Viking Leo Medi Lutz Svart].sample
+  erb(:index)
 end
