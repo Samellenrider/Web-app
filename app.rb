@@ -16,7 +16,19 @@ get '/surf' do
   "I love surfing"
 end
 
-get '/cat' do
-  @name = %w[Sam Viking Leo Medi Lutz Svart].sample
+post '/random_cat' do
+  p params
+  @name = params[:name]
   erb(:index)
 end
+
+get '/cat_form' do
+  erb(:cat_form)
+end
+
+
+
+
+
+
+

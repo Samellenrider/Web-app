@@ -1,3 +1,15 @@
-<img src ="http://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg" style="border: medium dashed pink">
+<img src ="http://www.cats.org.uk/uploads/images/featurebox_sidebar_kids/grief-and-loss.jpg" style="border: medium dashed black">
+
+<% if @name %>
 
 <h1> My name is <%= @name %></h1>
+
+<% end %>
+
+<form action="/random_cat" method = "post">
+
+<input type = "text" name = "name">
+
+<input type = "submit" value = "Submit">
+
+</form>
